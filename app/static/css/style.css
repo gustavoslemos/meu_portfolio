@@ -72,6 +72,75 @@ nav ul li a {
     margin: 0 20px;
 }
 
+.skills-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    max-width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.projects-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.projects-btn:hover {
+    transform: scale(1.1);
+}
+
 .work-showcase {
     padding: 50px 20px;
     text-align: center;
