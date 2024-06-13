@@ -1,0 +1,37 @@
+<!-- app/templates/home.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <div class="hero-text-left">
+            <h1>ciêntista de dados</h1>
+        </div>
+        <img src="{{ url_for('static', filename='img/suafoto.png') }}" alt="Sua Foto" class="profile-pic">
+        <div class="hero-text-right">
+            <h1>&lt;coder&gt;</h1>
+        </div>
+    </div>
+    <p>Especialista em análise de dados e apaixonado por estatística e programação.</p>
+</div>
+<div class="work-showcase">
+    <h2>Alguns dos meus trabalhos mais recentes</h2>
+    <div class="work-items">
+        <div class="work-item">
+            <img src="{{ url_for('static', filename='img/projeto1.png') }}" alt="Trabalho 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+        </div>
+        <div class="work-item">
+            <img src="{{ url_for('static', filename='img/projeto2.png') }}" alt="Trabalho 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+        </div>
+        <div class="work-item">
+            <img src="{{ url_for('static', filename='img/projeto3.png') }}" alt="Trabalho 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3.</p>
+        </div>
+    </div>
+    <button id="more-projects-btn">Mais Projetos</button>
+</div>
+{% endblock %}

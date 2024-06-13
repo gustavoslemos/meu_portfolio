@@ -1,0 +1,121 @@
+/* app/static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Altura fixa */
+    background: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Evita que o conteúdo aumente a altura */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-left,
+.hero-text-right {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text-left h1,
+.hero-text-right h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-section .profile-pic {
+    width: 300px;  /* Aumente o tamanho conforme necessário */
+    height: 300px; /* Aumente o tamanho conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    margin: 0 20px;
+}
+
+.work-showcase {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.work-showcase h2 {
+    margin-bottom: 40px;
+}
+
+.work-showcase .work-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work-showcase .work-item {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.work-showcase .work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-showcase .work-item h3 {
+    margin-top: 20px;
+}
+
+#more-projects-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#more-projects-btn:hover {
+    transform: scale(1.1);
+}
